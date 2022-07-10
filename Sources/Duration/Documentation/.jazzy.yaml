@@ -1,0 +1,21 @@
+theme: fullwidth
+custom_categories:
+  - name: "Basic Types"
+    children: 
+      - "Beats"
+      - "Subdivision"
+      - "Duration"
+      - "Meter"
+      - "Tempo"
+  - name: "Rhythm"
+    children:
+      - "Rhythm"
+      - "ProportionTree"
+      - "DurationTree"
+      - "AbsenceOrEvent"
+      - "ContinuationOrInstance"
+      - "event(_:)"
+      - "rest()"
+      - "tie()"
+      - "/>(_:_:)"
+      - "*(_:_)"

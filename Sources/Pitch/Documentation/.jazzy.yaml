@@ -1,0 +1,31 @@
+theme: fullwidth
+custom_categories:
+  - name: "Basic Types"
+    children:
+      - "Frequency"
+      - "NoteNumber"
+      - "Pitch"
+      - "Scale"
+      - "Chord"
+  - name: "Collections"
+    children:
+      - "Dyad"
+      - "Collection"
+  - name: "Intervals"
+    children:
+      - "OrderedInterval"
+      - "UnorderedInterval"
+  - name: "Diatonic Intervals"
+    children:
+      - "DiatonicInterval"
+      - "UnorderedDiatonicInterval"
+      - "CompoundDiatonicInterval"
+      - "DiatonicIntervalQuality"
+      - "DiatonicIntervalNumber"
+      - "DiatonicIntervalProtocol"
+  - name: "Harmonic Structures"
+    children:
+      - "ChordDescriptor"
+  - name: "Tuning Systems"
+    children:
+      - "TuningSystem"
