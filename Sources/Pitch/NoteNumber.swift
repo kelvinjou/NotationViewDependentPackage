@@ -25,43 +25,31 @@ import DataStructures
 ///     let cold: NoteNumber = 60
 ///
 public struct NoteNumber:
-    NewType,
+//    NewType,
     Comparable,
-    SignedNumeric,
-    AdditiveArithmetic,
     ExpressibleByFloatLiteral,
     ExpressibleByIntegerLiteral
 {
-    public init(floatLiteral value: Float) {
-        
-    }
-    
-    public static func - (lhs: NoteNumber, rhs: NoteNumber) -> NoteNumber {
-    }
-    
     public init(integerLiteral value: Int) {
+        self.value = Double(value)
     }
     
-    public var magnitude: Double
-    
-    public static func * (lhs: NoteNumber, rhs: NoteNumber) -> NoteNumber {
-    }
-    
-    public static func *= (lhs: inout NoteNumber, rhs: NoteNumber) {
-    }
-    
-    public static func < (lhs: NoteNumber, rhs: NoteNumber) -> Bool {
-        
+    public init(floatLiteral value: Float) {
+        self.value = Double(value)
     }
     
     public typealias FloatLiteralType = Float
     
-    public typealias IntegerLiteralType = Int
-    
     public typealias Magnitude = Double
     
     public static func + (lhs: NoteNumber, rhs: NoteNumber) -> NoteNumber {
-        
+        NoteNumber(value: 0)
+    }
+    
+    public typealias IntegerLiteralType = Int
+    
+    public static func < (lhs: NoteNumber, rhs: NoteNumber) -> Bool {
+        return true
     }
     
     // MARK: - Instance Properties
