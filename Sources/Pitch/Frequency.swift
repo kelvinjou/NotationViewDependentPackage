@@ -43,16 +43,17 @@ extension Frequency {
 
     /// Creates a `Frequency` from the given `noteNumber`, using the given reference `Frequency` for
     /// the given reference `NoteNumber`.
-    public init(noteNumber: NoteNumber, with freqRef: Frequency = 440, at nnRef: NoteNumber) {
+    public init(noteNumber: NoteNumber, with freqRef: Frequency(440.0), at nnRef: NoteNumber) {
         self.value = freqRef.value * pow(2.0, (nnRef.value - 69.0) / 12.0)
     }
 
     /// - Returns: A `NoteNumber` representation of this `Frequency`, using the given reference
     /// `Frequency` for the given reference `NoteNumber`.
-    public func noteNumber(with freqRef: Frequency = 440, at nnRef: NoteNumber = 69) -> NoteNumber {
+    public func noteNumber(with freqRef: Frequency(440.0), at nnRef: NoteNumber = 69) -> NoteNumber {
         return NoteNumber(frequency: self, with: freqRef, at: nnRef)
     }
 }
+
 
 extension Frequency {
 
