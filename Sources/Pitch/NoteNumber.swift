@@ -32,6 +32,34 @@ public struct NoteNumber:
     ExpressibleByFloatLiteral,
     ExpressibleByIntegerLiteral
 {
+    public static func - (lhs: NoteNumber, rhs: NoteNumber) -> NoteNumber {
+    }
+    
+    public init(integerLiteral value: Int) {
+    }
+    
+    public var magnitude: Double
+    
+    public static func * (lhs: NoteNumber, rhs: NoteNumber) -> NoteNumber {
+    }
+    
+    public static func *= (lhs: inout NoteNumber, rhs: NoteNumber) {
+    }
+    
+    public static func < (lhs: NoteNumber, rhs: NoteNumber) -> Bool {
+        
+    }
+    
+    public typealias FloatLiteralType = Float
+    
+    public typealias IntegerLiteralType = Int
+    
+    public typealias Magnitude = Double
+    
+    public static func + (lhs: NoteNumber, rhs: NoteNumber) -> NoteNumber {
+        
+    }
+    
     // MARK: - Instance Properties
 
     /// The value of a note number (a floating point analog to the MIDI note number).
