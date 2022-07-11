@@ -22,7 +22,7 @@ import Math
 ///     let nice = Frequency(440.0) // => "a 440"
 ///     let mean: Frequency = 440.0 // => "a 440"
 ///
-public struct Frequency: NewType, SignedNumeric, AdditiveArithmetic {
+public struct Frequency: NewType {
 
     // MARK: - Instance Properties
 
