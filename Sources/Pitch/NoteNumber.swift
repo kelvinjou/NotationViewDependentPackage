@@ -25,7 +25,7 @@ import DataStructures
 ///     let cold: NoteNumber = 60
 ///
 public struct NoteNumber:
-//    NewType,
+    NewType,
     Comparable,
     ExpressibleByFloatLiteral,
     ExpressibleByIntegerLiteral
