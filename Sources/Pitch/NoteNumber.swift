@@ -32,6 +32,10 @@ public struct NoteNumber:
     ExpressibleByFloatLiteral,
     ExpressibleByIntegerLiteral
 {
+    public init(floatLiteral value: Float) {
+        
+    }
+    
     public static func - (lhs: NoteNumber, rhs: NoteNumber) -> NoteNumber {
     }
     
