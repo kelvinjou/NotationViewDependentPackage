@@ -6,11 +6,11 @@ import PackageDescription
 let package = Package(
     name: "Music",
     products: [
-//         .library(name: "Articulations", targets: ["Articulations"]),
-//         .library(name: "Dynamics", targets: ["Dynamics"]),
-//         .library(name: "Pitch", targets: ["Pitch"]),
-//         .library(name: "Duration", targets: ["Duration"]),
-//         .library(name: "MusicModel", targets: ["MusicModel"])
+        .library(name: "Articulations", targets: ["Articulations"]),
+        .library(name: "Dynamics", targets: ["Dynamics"]),
+        .library(name: "Pitch", targets: ["Pitch"]),
+        .library(name: "Duration", targets: ["Duration"]),
+        .library(name: "MusicModel", targets: ["MusicModel"])
     ],
     dependencies: [
         .package(url: "https://github.com/dn-m/Structure", from: "0.24.0"),
