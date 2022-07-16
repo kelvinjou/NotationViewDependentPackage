@@ -74,7 +74,7 @@ public final class Model {
     let rhythms: [Voice.ID: IntervalSearchTree<Fraction,Set<RhythmID>>]
 
     /// The identifier of each event stored by the identifier of the rhythm which contains it.
-    public let eventsByRhythm: [RhythmID: Set<EventID>]
+    let eventsByRhythm: [RhythmID: Set<EventID>]
 
     // MARK: Spanners
 
