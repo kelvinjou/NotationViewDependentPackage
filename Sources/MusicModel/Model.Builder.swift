@@ -46,7 +46,7 @@ extension Model {
         var rhythms: [Voice.ID: IntervalSearchTree<Fraction,Set<RhythmID>>] = [:]
 
         /// The identifier of each event stored by the identifier of the rhythm which contains it.
-        var eventsByRhythm: [RhythmID: Set<EventID>] = [:]
+        public var eventsByRhythm: [RhythmID: Set<EventID>] = [:]
 
         // TODO: Spanner (from EventID to EventID + SpannerType)
 
