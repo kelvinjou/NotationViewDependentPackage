@@ -22,7 +22,7 @@ public struct Event {
         return attributes.isEmpty
     }
     var attributes: [Any]
-    init(_ attributes: [Any]) {
+    public init(_ attributes: [Any]) {
         self.attributes = attributes
     }
     func filter(_ isIncluded: (Any) -> Bool) -> Event {
